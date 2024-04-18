@@ -7,7 +7,7 @@ import { base } from "viem/chains";
 export const SignProtocolComponent = () => {
   const walletClient = createWalletClient({
     chain: base,
-    transport: custom(window.ethereum!),
+    transport: custom(window.ethereum),
   });
 
   const signProtocol = async () => {
